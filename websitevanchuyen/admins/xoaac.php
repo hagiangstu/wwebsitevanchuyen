@@ -1,6 +1,7 @@
-<?php
+ <?php
 print_r($_GET);
-$account=$_GET["ten"];
+$AC=$_GET["ten"];
+print_r($AC);//exit();
 ?>
  <?php 
 	try{
@@ -11,8 +12,8 @@ $account=$_GET["ten"];
 		echo $e->getMessage(); exit;
 	}
 		
-		
-			$stmt=$pdh->prepare("DELETE FROM `webchuyenhang`.`account` WHERE `account`.`Username` =".$account);
+			
+			$stmt=$pdh->prepare("Delete FROM account where Username='$AC' ");
 			$stmt->execute();
 			$n = $stmt->rowCount();
 	if($n>=1)
