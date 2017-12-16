@@ -1,4 +1,13 @@
+<?php
+	if(!isset($_SESSION)) session_start();
+	if(!isset($_SESSION["admin"]))
+	{
+		header('location:../modul/dangnhap1.php');
+	}
+	
+	
 
+?>
 <?php 
 print_r($_GET);
 $ten=$_GET["ten"];
