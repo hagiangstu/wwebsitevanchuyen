@@ -1,3 +1,4 @@
+chau da sua!!
 <?php
 function loadClass($c)
 {
