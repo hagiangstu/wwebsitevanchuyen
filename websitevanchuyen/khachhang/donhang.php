@@ -67,7 +67,7 @@ $loaidh=postIndex("loai");
         			<td><?php echo "$ngayduyet"?></td>
 					<td><?php echo "$xuly"?></td>
         			<td><?php echo "$IDkh"?></td>
-                    <td><a href="thongtindonhang.php?ma=<?php echo $ID?> & nv=<?php echo $id?>">Thông tin</a></td>
+                    <td><a href="thongtindonhang.php?ma=<?php echo $ID?> & nhanvien=<?php echo $id?>">Thông tin</a></td>
                     </tr>
                     
 		<?php
